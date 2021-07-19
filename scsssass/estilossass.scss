@@ -1,0 +1,67 @@
+@import: "colores";
+
+$medida:100px;
+
+
+
+@mixin servicios {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+@mixin condiciontexto($color){
+    background:($color);
+
+    @if $color == $colorserv1{
+        color:white;
+    }
+        @else if $color == $colorserv2{
+            color:white;
+            font-style: italic;
+    }
+            @else if $color == $colorserv3{
+                color:white;
+    }
+                @else{
+                    color:red;
+        }
+ }
+
+ @for $i from 1 through 3{
+    .lista-#{$i}
+    {
+        font-size: 12px * $i;}
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.serv{
+    border: red 2px solid;
+    margin: $medida/2
+}
+.servicios-1{
+    @include servicios;
+    @include condiciontexto($colorserv1);
+    background: $colorserv1;  
+    
+}
+
+.servicios-2{
+    @include servicios;
+    @include condiciontexto($colorserv2)
+    background: $colorserv2 ;
+}
+.servicios-3{
+    @include servicios;
+    @include condiciontexto($colorserv3)
+    background: $colorserv3;
+}
+
+
+

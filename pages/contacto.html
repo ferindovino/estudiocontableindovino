@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Contable Indovino</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat:wght@300&family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../csspropio/estilosnuevos.css">
+    <link rel="stylesheet" href="../csssass/estilossass.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Este es el sitio web de mi estudio contable en el que encontraras asesoramiento y novedades del tema , sitios de interes, principales novedades, vencimientos">
+    <meta name="keywords"  content="CONTADOR,PUBLICO,ESTUDIO, CONTABLE, IMPUESTOS, CONTABILIDAD, ASESORAMIENTO">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Estudio Contable Indovino</h1>
+            <!--LOGO DEL ESTUDIO-->
+        </div>
+        
+    </header>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-light barra_superior  ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse " id="opciones">   
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="navbar-brand p-2 m-5 text-light " href="../index.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand p-2 m-5 text-light" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand p-2 m-5 text-light" href="monotributistas.html">Monotributistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand p-2 m-5 text-light" href="responsables-inscriptos.html">Responsables Inscriptos</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="navbar-brand p-2 m-5 text-light" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navbar-brand p-2 m-5 text-light" href="quienes-somos.html">Quienes Somos</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="navbar-brand p-2 m-5 text-light" href="contacto.html">Contacto</a>
+                  </li>          
+              </ul>
+            </div>
+          </nav>
+
+
+    <div class=" formcontacto p-3">
+        <h3 class="ms-3">Formulario de Contacto</h3>
+        <form action="">
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" placeholder="escribe tu nombre" maxlength="30" required>
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="escribe tu apellido" maxlength="30" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="mail" placeholder="escribe tu mail" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="number" name="telefono" placeholder="numero de contacto" maxlength="20"required> 
+            </div>
+            <br>
+            <div>
+                <label for="tipo de consulta">Tipo de consulta</label>
+                <select name="tipo de consulta" id="tipo de consulta"> 
+                <option value="persona fisica">Persona Fisica</option>
+                <option value="persona juridica">Persona Juridica</option>
+                <option value="monotributista">Persona Juridica</option>
+                <option value="impositiva">Impositiva</option>
+                <option value="contable">Contable</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="consulta">Deje su consulta</label>
+                <br>
+                <textarea name="consulta" id="consulta" cols="30" rows="10"required></textarea>
+            </div>
+            <br>
+            
+            <div>
+                <label for="terms">Acepta terminos y condiciones</label>
+                <input type="checkbox"name="terms" value="1"required>
+            </div>
+            <br>
+        
+        
+        </form>
+
+    <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Enviar
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">ATENCION</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+             </button>
+             </div>
+            <div class="modal-body">
+                ¿Desea guardar los cambios?
+             </div>
+            <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+             <button type="button" class="btn btn-primary">Guardar</button>
+             </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="footer row p-3 col-12">
+            <h2 class="col-12"> DATOS DE CONTACTO </h2>
+        <div class=col-2>
+                <img src="../imagenes/gmail.svg" alt="icono_gmail" class="img-fluid tamanoIconos">
+                
+            </div>
+            <div class="col-2">
+                <img src="../imagenes/linkedin.svg" alt="icono_linkedin" class="img-fluid tamanoIconos">
+                
+            </div>
+            <div class="col-2">
+                <img src="../imagenes/icono_wsp.svg" alt="icono_wsp" class="img-fluid tamanoIconos">
+                
+            </div>
+            <div class="col-2">
+                <img src="../imagenES/youtube.svg" alt="icono_youtube" class="img-fluid tamanoIconos">
+                
+            </div>
+            <div class="col-2">
+                <img src="../imageneS/instagram.svg" alt="icono_instagram" class="img-fluid tamanoIconos">
+               
+            </div>
+        </div>
+    </footer>
+<script src="../js/bootstrap.js"></script>   
+</body>
+</html>
